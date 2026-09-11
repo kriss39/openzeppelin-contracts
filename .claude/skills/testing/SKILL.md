@@ -73,7 +73,7 @@ beforeEach(async function () {
 **Shared behavior**: reuse via `shouldBehaveLike*` functions in sibling `.behavior.js` files. Mount with this-context state set in the fixture:
 
 ```javascript
-const { shouldBehaveLikeERC20 } = require('./ERC20.behavior');
+import { shouldBehaveLikeERC20 } from './ERC20.behavior';
 // ...
 shouldBehaveLikeERC20(initialSupply, { forcedApproval });
 ```
